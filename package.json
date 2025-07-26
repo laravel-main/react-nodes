@@ -1,0 +1,13 @@
+{
+    "name": "react-nodes",
+    "version": "4.0.1",
+    "description": "Nodejs SDK for nodes",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "preinstall": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {}
+}
